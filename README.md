@@ -60,4 +60,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/4dev-shop.git
+   git clone https://github.com/StefanHritcu/4Dev-Shop.git
+   cd frontend
+   npm install
+   
