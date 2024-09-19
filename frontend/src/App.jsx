@@ -7,6 +7,8 @@ import { lazy, Profiler, Suspense } from "react";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 
 const ToggleMenu = lazy(() => import("./components/toggleMenu/ToggleMenu"));
+const AboutUs = lazy(() => import("./components/aboutUs/AboutUs"));
+const ContactUs = lazy(() => import("./components/contactUs/ContactUs"));
 
 function App() {
   const onRenderApp = (
@@ -67,13 +69,49 @@ function App() {
                   <Profiler id="Shop" onRender={onRenderApp}>
                     <Helmet>
                       {/* Metadati specifici per la pagina Shop */}
-                      <title>Shop - My React App</title>
+                      <title>Shop - 4Dev Shop</title>
                       <meta
                         name="description"
                         content="Browse through our shop."
                       />
                     </Helmet>
                     <Shop />
+                  </Profiler>
+                </Suspense>
+              }
+            />
+            <Route
+              path="/aboutus"
+              element={
+                <Suspense fallback={<div>Loading About Us...</div>}>
+                  <Profiler id="About Us" onRender={onRenderApp}>
+                    <Helmet>
+                      {/* Metadati specifici per la pagina About Us */}
+                      <title>About Us - 4Dev Shop</title>
+                      <meta
+                        name="description"
+                        content="Browse through out about us"
+                      />
+                    </Helmet>
+                    <AboutUs />
+                  </Profiler>
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contactus"
+              element={
+                <Suspense fallback={<div>Loading Contact Us...</div>}>
+                  <Profiler id="Contact Us" onRender={onRenderApp}>
+                    <Helmet>
+                      {/* Metadati specifici per la pagina Contact Us */}
+                      <title>Contact Us - 4Dev Shop</title>
+                      <meta
+                        name="description"
+                        content="Browse through out contact us"
+                      />
+                    </Helmet>
+                    <ContactUs />
                   </Profiler>
                 </Suspense>
               }
