@@ -1,72 +1,18 @@
+import HomePageImage from "../assets/images/HomePageImg.jpg";
+import InfoDescription from "./homePageCOMPONENTS/InfoDescription";
+import NewArrivals from "./homePageCOMPONENTS/newArrivals/NewArrivals";
+
 function HomePage() {
   return (
     <>
-      <div className="mt-28 sm:mt-40 xl:mt-56">
-        <h1>INIZIO</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>2</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>3</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
-        <h1>Homepage</h1>
-        <span>Lorem ipsum dolor sit.</span>
-        <hr />
+      <div className="mt-24 sm:mt-38 xl:mt-52 h-auto">
+        <img
+          src={HomePageImage}
+          alt="home page image"
+          className="w-full h-auto"
+        />
+        <InfoDescription />
+        <NewArrivals />
       </div>
     </>
   );

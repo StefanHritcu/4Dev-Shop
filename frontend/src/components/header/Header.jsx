@@ -190,7 +190,7 @@ function Header() {
         {/* Third header row with additional customer information */}
         <div className="hidden md:block">
           <nav
-            className="flex justify-center items-center py-1 bg-gray-200"
+            className="flex justify-center items-center py-2 bg-gray-200"
             aria-label="Customer information navigation"
           >
             <section className="group" aria-label="Italian Design">
